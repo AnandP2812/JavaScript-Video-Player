@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <title>Worksheet 8</title>
+
+    <script src="scripts/videoScript.js"></script>
+
+</head>
+
+<body>
+
+    <h1>Anand Prajapati; 20th November 2017</h1>
+
+    <section id="videoContainer">
+        <video width="640" height="340">
+		<source src="Videos/coldplay.mp4">  <!--Two video formats - MP4 and webm - to support different browsers-->
+      <source src="Videos/coldplay.webm">
+        </video>
+
+        <div id="vidControls">
+
+            <button id="playPause" type="button">Play</button>
+            <button id="muteButton" type="button">Mute</button>
+            <button id="stopButton" type="button">Stop</button>
+            <input type="range" id="seekBar" min=0 max=100 step=1 value=0>
+            <input type="range" id="moveVolume" min=0 max=100 step=1 value=100>
+            <input type="text" readonly id="currentField" size="4"/>
+            <input type="text" readonly id="durationField" size="4"/>
+
+            <select>
+            <option value="0.5">0.5x</option>
+            <option value="0.75">0.75x</option>
+            <option value="1" selected>1x</option>
+            <option value="1.5">1.25x</option>
+            <option value="1.75">1.75x</option>
+            <option value="2">2x</option>
+            </select>
+
+
+            <button id="fastForward" type="button">>></button>
+
+
+        </div>
+
+</body>
+
+</html>
